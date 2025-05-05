@@ -2,6 +2,7 @@ package com.hexagonal.buckpal.application.domain.model;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 import lombok.NonNull;
 
 import java.time.LocalDateTime;
@@ -11,7 +12,9 @@ import java.util.Optional;
 public class Account {
 
     private AccountId id;
+    @Getter
     private Money baselineBalance;
+    @Getter
     private ActivityWindow activityWindow;
 
     public static Account withoutId(Money baselineBalance,
