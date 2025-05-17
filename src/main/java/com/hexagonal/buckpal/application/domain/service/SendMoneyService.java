@@ -17,7 +17,7 @@ import static com.hexagonal.buckpal.application.domain.model.Account.AccountId;
 @RequiredArgsConstructor
 @UseCase
 @Transactional
-public class SendMoneyService implements SendMoneyUseCase {
+class SendMoneyService implements SendMoneyUseCase {
 
     private final AccountLock accountLock;
     private final LoadAccountPort loadAccountPort;

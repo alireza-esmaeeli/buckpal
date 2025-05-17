@@ -15,7 +15,7 @@ import static com.hexagonal.buckpal.application.domain.model.Account.AccountId;
 import static com.hexagonal.buckpal.application.domain.model.Account.withId;
 
 @Component
-public class AccountMapper {
+class AccountMapper {
 
     Account mapToDomainEntity(AccountJpaEntity account,
                               List<ActivityJpaEntity> activities,

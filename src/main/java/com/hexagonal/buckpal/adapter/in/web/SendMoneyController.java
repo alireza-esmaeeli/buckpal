@@ -14,7 +14,7 @@ import static com.hexagonal.buckpal.application.domain.model.Account.AccountId;
 @WebAdapter
 @RestController
 @RequiredArgsConstructor
-public class SendMoneyController {
+class SendMoneyController {
 
     private final SendMoneyUseCase sendMoneyUseCase;
 
